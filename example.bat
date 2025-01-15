@@ -1,0 +1,1 @@
+python chameleon_string_editor.py "D:\nfshpr en unp\Language\FA_3B_D5_D8.dat" 64 -u
