@@ -85,7 +85,8 @@ class mode_Unpack:
                 for i in range(lang_entry_count):
                     f.seek(pointer_langStoredAt[i])
                     tempString = f.read(pointer_langLength[i]*2).hex()
-                    decodedString = bytes.fromhex(tempString).decode("utf-16").replace('\u0000', '')
+                    tempString = tempString[:-4]
+                    decodedString = bytes.fromhex(tempString).decode("utf-16")
                     self.Language_String.append(decodedString)
 
             elif (bit == 64):
@@ -111,7 +112,8 @@ class mode_Unpack:
                 for i in range(lang_entry_count):
                     f.seek(pointer_langStoredAt[i])
                     tempString = f.read(pointer_langLength[i]*2).hex()
-                    decodedString = bytes.fromhex(tempString).decode("utf-16").replace('\u0000', '')
+                    tempString = tempString[:-4]
+                    decodedString = bytes.fromhex(tempString).decode("utf-16")
                     self.Language_String.append(decodedString)
             else:
                 return
