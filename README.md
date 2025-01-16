@@ -25,6 +25,7 @@ You can now modify the strings made by any Chameleon Engine games (NFSHP10, NFSM
    - `0011.BNDL` (Japanese)
    - `0012.BNDL` (Traditional Chinese)
    - `0013.BNDL` (Dutch)
+   - `0014.BNDL` (Arabic)
 
 2. **After unpacking the BNDL file**, modify the `example.bat` file to change the settings, or just launch it through a shell. It includes the following parameters:
 
